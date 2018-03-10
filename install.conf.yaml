@@ -3,5 +3,6 @@
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
+    ~/.emacs.el: emacs.el
 
 
