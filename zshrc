@@ -36,6 +36,8 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+export WORKON_HOME=~/.virtualenvs
+
 # antigen stuff
 source ~/antigen.zsh
 
@@ -50,3 +52,4 @@ antigen bundle desyncr/auto-ls
 antigen theme iplaces/astro-zsh-theme
 
 antigen apply
+
