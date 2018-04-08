@@ -36,14 +36,16 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-export WORKON_HOME=~/.virtualenvs
+#export WORKON_HOME=~/.virtualenvs
+# pipenv completion
+export SHELL=/bin/zsh
+eval "$(pipenv --completion)"
 
 # antigen stuff
 source ~/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
-antigen bundle virtualenvwrapper
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
