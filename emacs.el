@@ -97,6 +97,14 @@
     (org-archive-subtree)))
 
 (add-hook 'org-after-todo-state-change-hook 'custom-clean-done-todo)
+
+(defun custom-insert-date-todo (&rest ignore)
+  "Insert a CREATED property to track how long todos remain in my list"
+  (when (not (org-entry-get nil "CREATED")))
+  (org-entry-put nil "CREATED" (format-time-string (cdr org-time-stamp-formats))))
+
+(advice-add 'org-insert-todo-heading :after 'custom-insert-date-todo)
+(add-hook 'org-after-todo-state-change-hook 'custom-insert-date-todo)
 ;; end org-mode config
 
 ;; Auto-revert on file-changed-on-disk
