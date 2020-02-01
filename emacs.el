@@ -15,8 +15,10 @@
 ;; Don't let Emacs hurt your ears
 (setq visible-bell t)
 
-;; Remove the toolbar
-(tool-bar-mode 0)
+;; Remove the toolbar if it is bound, in terminal it isn't
+(if (fboundp 'tool-bar-mode)
+    (tool-bar-mode 0))
+
 ;; Remove the menu bar
 (menu-bar-mode 0)
 ; use only spaces and no tabs
