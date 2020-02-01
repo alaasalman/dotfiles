@@ -40,7 +40,11 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # pipenv completion
 export SHELL=/bin/zsh
 export PATH=$PATH:$HOME/.local/bin
-eval "$(pipenv --completion)"
+
+# check if pipenv exists before loading completions
+if type "pipenv" > /dev/null; then
+    eval "$(pipenv --completion)"
+fi
 
 # add snap binaries via emulation
 emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
