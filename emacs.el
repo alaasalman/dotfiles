@@ -46,12 +46,6 @@
       (eval-print-last-sexp))))
 (el-get 'sync)
 
-;; to activate jedi py autocomplete
-(require 'jedi)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)
-(setq jedi:complete-on-dot t)
-
 ;; for syntax checking
 ;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
