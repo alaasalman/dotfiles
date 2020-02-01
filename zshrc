@@ -39,10 +39,14 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 #export WORKON_HOME=~/.virtualenvs
 # pipenv completion
 export SHELL=/bin/zsh
+export PATH=$PATH:$HOME/.local/bin
 eval "$(pipenv --completion)"
 
+# add snap binaries via emulation
+emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
+
 # antigen stuff
-source ~/antigen.zsh
+source ~/.antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
