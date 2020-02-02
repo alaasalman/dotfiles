@@ -23,19 +23,3 @@ fi
 
 # add snap binaries via emulation
 emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
-
-# antigen stuff
-#source ~/.antigen.zsh
-
-#antigen use oh-my-zsh
-#antigen bundle git
-
-#antigen bundle zsh-users/zsh-syntax-highlighting
-#antigen bundle zsh-users/zsh-history-substring-search
-#antigen bundle desyncr/auto-ls
-#antigen bundle zsh-users/zsh-autosuggestions
-
-#antigen theme iplaces/astro-zsh-theme
-
-#antigen apply
-
