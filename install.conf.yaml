@@ -4,5 +4,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
     ~/.emacs.el: emacs.el
-
-
+    ~/.zpreztorc:
+        relink: true
+        path: zpreztorc
