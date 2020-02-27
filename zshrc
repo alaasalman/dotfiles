@@ -15,11 +15,5 @@ HISTFILE=~/.zsh_history
 export SHELL=/bin/zsh
 export PATH=$PATH:$HOME/.local/bin
 
-# pipenv completion
-# check if pipenv exists before loading completions
-if type "pipenv" > /dev/null; then
-    eval "$(pipenv --completion)"
-fi
-
 # add snap binaries via emulation
 emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'
