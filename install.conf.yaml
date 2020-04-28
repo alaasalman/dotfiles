@@ -2,7 +2,9 @@
 
 - link:
     ~/.tmux.conf: tmux.conf
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        relink: true
+        path: zshrc
     ~/.emacs.el: emacs.el
     ~/.zpreztorc:
         relink: true
