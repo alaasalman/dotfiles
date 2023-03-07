@@ -1,0 +1,5 @@
+[user]
+	name = Alaa Salman
+	email = alaa@codedemigod.com
+[core]
+	editor = emacs -nw
