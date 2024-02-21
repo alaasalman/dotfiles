@@ -16,4 +16,4 @@ done
 - Manually link whatever files you need
 
 ## Notes
-For git, make sure [[https://github.com/dandavison/delta][delta]] is installed.
+For git, make sure [delta](https://github.com/dandavison/delta) is installed.
