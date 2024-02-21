@@ -1,6 +1,8 @@
 # dotfiles
+## Info
 My custom dotfiles.
 
+## Steps
 To get this going, go through the following steps:
 - Launch zsh via `zsh`
 - Clone prezto `git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
@@ -12,3 +14,6 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 ```
 - Manually link whatever files you need
+
+## Notes
+For git, make sure [[https://github.com/dandavison/delta][delta]] is installed.
